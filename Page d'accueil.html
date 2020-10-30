@@ -274,6 +274,7 @@ a.contener_slide{
 </head>
 
 <body>
+<?php echo ?>
 
 <h1><p style=text-align:center> Mister Cuisto</bold></h1>
 
@@ -307,14 +308,20 @@ a.contener_slide{
   <h3>Déja inscrit connectez vous</h3>
   <br/>
 
-<form method="post" action="mailto:votreemail@email.com">  
-  <label>Nom:</label></br>
-<input type="text" id="nom"/></br>
+<form action="insert.php" method="POST" class="jumbotron">
+<div class="form-group">
+<label>Nom:</label></br>
+<input type="text" id="nom" name="nom"/></br>
+</div>
+
+<div class="form-group">
 <label>Mail:</label></br>
 <input type="mail" id="Mail" /><br/>
 <label>Password:</label></br>
 <input type="Mot de passe"id="Password" /><br/>
-<input type="submit" value="Sign in" >
+<div class=text-center mt-3">
+<button type="submit" class="btn btn-primary">Sign in</button>
+
 </form> 
 
 </section>   
